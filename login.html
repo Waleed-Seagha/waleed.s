@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waleed | Login</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/loading.css">
+    <style>
+        body {
+            padding-top: 0;
+            background: var(--bg_color);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-container {
+            background: var(--white_color);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        .login-container .logo {
+            width: 180px;
+            margin: 0 auto 30px;
+            display: block;
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--color_heading);
+        }
+        .form-group input {
+            width: 100%;
+            height: 45px;
+            padding: 0 15px;
+            border: 1px solid var(--border_color);
+            border-radius: 4px;
+            background: var(--bg_color);
+        }
+        .form-group input:focus {
+            border-color: var(--main_color);
+        }
+        .login-btn {
+            width: 100%;
+            height: 45px;
+            background: var(--main_color);
+            color: var(--white_color);
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 135, 22, 0.3);
+        }
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .signup-link a {
+            color: var(--main_color);
+            font-weight: 500;
+        }
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Waleed Store">
+        </a>
+        <h2>تسجيل الدخول</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">اسم المستخدم</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="login-btn">تسجيل الدخول</button>
+            <div class="signup-link">
+                ليس لديك حساب؟ <a href="signup.html">إنشاء حساب جديد</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/loading.js"></script>
+    <script src="JS/login.js"></script>
+</body>
+</html>

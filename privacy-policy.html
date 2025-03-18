@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WALEED | سياسة الخصوصية والشروط والأحكام</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/loading.css">
+    <style>
+        .privacy-hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/bg_banner3.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white_color);
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .privacy-hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: slideDown 0.8s ease-out;
+        }
+
+        .privacy-content {
+            padding: 60px 0;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .privacy-section {
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .privacy-section h2 {
+            color: var(--main_color);
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .privacy-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--color_text);
+            margin-bottom: 15px;
+        }
+
+        .privacy-section ul {
+            padding-right: 20px;
+            margin-bottom: 15px;
+        }
+
+        .privacy-section li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: var(--color_text);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="index.html" class="logo"> <img src="img/logo.png" alt="WALEED"></a>
+                <form action="" class="search_box">
+                    <div class="select_box">
+                        <span>جميع الفئات</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <input type="search" placeholder="ابحث عن منتجك هنا...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="left_top_header">
+                    <div class="user_info">
+                        <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                    </div>
+                    <div class="cart_info">
+                        <i onclick="open_close_cart()" class="fa-solid fa-cart-shopping"></i>
+                        <span class="count_items">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="privacy-hero">
+        <h1>سياسة الخصوصية والشروط والأحكام</h1>
+    </div>
+
+    <div class="privacy-content">
+        <div class="privacy-section">
+            <h2>سياسة الخصوصية</h2>
+            <p>نحن في متجر WALEED نلتزم بحماية خصوصية عملائنا الكرام. تصف هذه السياسة كيفية جمع واستخدام وحماية معلوماتك الشخصية.</p>
+            <ul>
+                <li>نجمع فقط المعلومات الضرورية لتقديم خدماتنا</li>
+                <li>لا نشارك معلوماتك الشخصية مع أي طرف ثالث دون موافقتك</li>
+                <li>نستخدم تقنيات تشفير متقدمة لحماية بياناتك</li>
+                <li>يمكنك طلب حذف معلوماتك في أي وقت</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2>الشروط والأحكام</h2>
+            <p>باستخدامك لموقعنا، فإنك توافق على الشروط والأحكام التالية:</p>
+            <ul>
+                <li>يجب أن يكون عمرك 18 عاماً أو أكثر لإجراء عملية شراء</li>
+                <li>جميع الأسعار قابلة للتغيير دون إشعار مسبق</li>
+                <li>نحتفظ بحق رفض أي طلب لأي سبب</li>
+                <li>يجب استخدام الموقع بشكل قانوني وأخلاقي</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2>سياسة الإرجاع والاستبدال</h2>
+            <p>نقدم سياسة إرجاع مرنة لضمان رضا عملائنا:</p>
+            <ul>
+                <li>يمكن إرجاع المنتج خلال 14 يوماً من تاريخ الاستلام</li>
+                <li>يجب أن يكون المنتج في حالته الأصلية وغير مستخدم</li>
+                <li>سيتم رد المبلغ خلال 7 أيام عمل من استلام المنتج المرتجع</li>
+                <li>تكاليف الشحن للمنتجات المرتجعة يتحملها العميل</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/loading.js"></script>
+</body>
+</html>

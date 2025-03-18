@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WALEED | عن المتجر</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/loading.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/bg_banner3.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white_color);
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .about-hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: slideDown 0.8s ease-out;
+        }
+
+        .about-content {
+            padding: 80px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            margin-bottom: 60px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .about-section h2 {
+            color: var(--main_color);
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--color_text);
+            margin-bottom: 15px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            background: var(--white_color);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .value-card i {
+            font-size: 40px;
+            color: var(--main_color);
+            margin-bottom: 20px;
+        }
+
+        .value-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--color_heading);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="index.html" class="logo"> <img src="img/logo.png" alt="WALEED"></a>
+                <form action="" class="search_box">
+                    <div class="select_box">
+                        <select id="category" name="category">
+                            <option value="All Categories">جميع الفئات</option>
+                            <option value="Electronics & Digital">الإلكترونيات والرقميات</option>
+                            <option value="Phones & Tablet">الهواتف والأجهزة اللوحية</option>
+                            <option value="Fashion & Clothings">الأزياء والملابس</option>
+                            <option value="Television & Monitor">التلفزيونات والشاشات</option>
+                            <option value="Jewelry & Watches">المجوهرات والساعات</option>
+                            <option value="Home & Furniture">المنزل والأثاث</option>
+                            <option value="Beauty & Care">الجمال والعناية</option>
+                        </select>
+                    </div>
+                    <input type="text" name="search" id="search" placeholder="ابحث عن منتجك هنا..." required>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div class="left_top_header">
+                    <div class="user_info">
+                        <a href="login.html"><i class="fa-regular fa-user"></i></a>
+                    </div>
+                    <div class="cart_info">
+                        <i onclick="open_close_cart()" class="fa-solid fa-cart-shopping"></i>
+                        <span class="count_items">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="about-hero">
+        <h1>مرحباً بكم في متجر WALEED</h1>
+    </div>
+
+    <div class="about-content">
+        <div class="about-section">
+            <h2>من نحن</h2>
+            <p>متجر WALEED هو وجهتك المثالية للتسوق الإلكتروني، حيث نقدم تشكيلة واسعة من المنتجات عالية الجودة بأسعار تنافسية. نحن نؤمن بأن تجربة التسوق يجب أن تكون سهلة وممتعة وآمنة.</p>
+            <p>منذ تأسيسنا، ونحن نسعى جاهدين لتقديم أفضل الخدمات لعملائنا الكرام، مع التركيز على الجودة والموثوقية والخدمة المتميزة.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>قيمنا</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-star"></i>
+                    <h3>الجودة</h3>
+                    <p>نقدم منتجات عالية الجودة تلبي توقعات عملائنا</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>الموثوقية</h3>
+                    <p>نضمن تجربة تسوق آمنة وموثوقة لجميع عملائنا</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>رضا العملاء</h3>
+                    <p>رضا عملائنا هو أولويتنا القصوى</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>خدماتنا</h2>
+            <p>نقدم مجموعة متنوعة من الخدمات لضمان تجربة تسوق مثالية:</p>
+            <ul>
+                <li>شحن سريع وموثوق</li>
+                <li>دعم فني على مدار الساعة</li>
+                <li>ضمان استرداد الأموال</li>
+                <li>تتبع الطلبات المباشر</li>
+                <li>خدمة عملاء متميزة</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/loading.js"></script>
+</body>
+</html>
